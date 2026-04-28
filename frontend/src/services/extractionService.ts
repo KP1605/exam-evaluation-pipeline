@@ -15,5 +15,7 @@ export const generateMockExtractionData = (): ExtractedData => {
     rollNo: `RN${randomDigits(6)}`,
     submissionId: `SUB-${randomDigits(8)}`,
     uploadId: `UP-${randomDigits(8)}`,
+    questionPaperId: `QP-${randomDigits(4)}`, 
+    examDate: new Date().toISOString().split('T')[0]
   }
 }

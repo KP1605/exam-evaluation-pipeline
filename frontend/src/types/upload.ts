@@ -5,6 +5,8 @@ export interface ExtractedData {
   rollNo: string
   submissionId: string
   uploadId: string
+  questionPaperId: string;
+  examDate: string;
 }
 
 export interface UploadFileItem {

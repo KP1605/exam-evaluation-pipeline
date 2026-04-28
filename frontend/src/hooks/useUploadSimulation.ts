@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { UploadFileItem } from '../types/upload'
-import { generateMockExtractionData } from '../utils/mockExtraction'
+import { generateMockExtractionData } from "../services/extractionService";
 
 const createId = () => crypto.randomUUID()
 

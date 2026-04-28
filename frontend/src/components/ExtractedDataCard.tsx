@@ -36,6 +36,14 @@ export function ExtractedDataCard({ file, onVerify }: ExtractedDataCardProps) {
             <p className="text-xs text-slate-500">Upload ID</p>
             <p className="text-sm font-medium text-slate-900">{file.extractedData.uploadId}</p>
           </div>
+          <div className={dataRowClass}>
+            <p className="text-xs text-slate-500">Question Paper ID</p>
+            <p className="text-sm font-medium text-slate-900">{file.extractedData.questionPaperId}</p>
+          </div>
+          <div className={dataRowClass}>
+            <p className="text-xs text-slate-500">Exam Date</p>
+            <p className="text-sm font-medium text-slate-900">{file.extractedData.examDate}</p>
+          </div>
         </div>
       )}
 

@@ -18,6 +18,8 @@ export function BulkTable({ files, disabled, onVerify }: BulkTableProps) {
             <th className="px-4 py-3">Roll No</th>
             <th className="px-4 py-3">Submission ID</th>
             <th className="px-4 py-3">Upload ID</th>
+            <th className="px-4 py-3">Question Paper ID</th>
+            <th className="px-4 py-3">Exam Date</th>
             <th className="px-4 py-3">Status</th>
             <th className="px-4 py-3">Verify</th>
           </tr>
@@ -30,6 +32,8 @@ export function BulkTable({ files, disabled, onVerify }: BulkTableProps) {
               <td className="px-4 py-3">{file.extractedData?.rollNo ?? '-'}</td>
               <td className="px-4 py-3">{file.extractedData?.submissionId ?? '-'}</td>
               <td className="px-4 py-3">{file.extractedData?.uploadId ?? '-'}</td>
+              <td className="px-4 py-3">{file.extractedData?.questionPaperId ?? '-'}</td>
+              <td className="px-4 py-3">{file.extractedData?.examDate ?? '-'}</td>
               <td className="px-4 py-3">
                 <FileStatusBadge status={file.status} />
               </td>
